@@ -7,7 +7,7 @@ class App extends Component {
 
   //for checking connection with backend
   componentDidMount(){
-    axios.get('/check-backend')
+    axios.get('api/check-backend')
       .then((res)=>{
         console.log(res.data)
       })

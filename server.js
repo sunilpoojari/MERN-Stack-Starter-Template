@@ -49,4 +49,4 @@ if(fs.existsSync(path.resolve(__dirname,'client','build','index.html'))){
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/", routes);
+app.use("/api", routes);
