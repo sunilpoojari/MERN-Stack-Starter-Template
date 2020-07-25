@@ -1,0 +1,22 @@
+{
+  "name": "mern-stack-starter-template",
+  "version": "1.0.0",
+  "description": "MERN Starter Template",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "install-client": "npm install --prefix client",
+    "dev": "concurrently \" npm run server \"   \" npm run client \" ",
+    "build": "npm run build --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Sunil Poojari",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25"
+  }
+}
