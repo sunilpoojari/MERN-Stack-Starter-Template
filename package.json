@@ -15,8 +15,8 @@
   "author": "Sunil Poojari",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.25"
+    "mongoose": "^5.10.3"
   }
 }
